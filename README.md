@@ -36,7 +36,7 @@ export const sitemap: Sitemap<MyRoutes> = {
     // Dynamic route example
     "/posts/$postId": async (route) => {
       const postsResponse = await fetch("https://example.com/api/posts");
-      const posts = await organizerResponse.json();
+      const posts = await postsResponse.json();
 
       return posts.map((post) => ({
         path: `/posts/${post.id}`,
