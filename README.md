@@ -88,7 +88,3 @@ This plugin will generate a `sitemap.xml` file in your public directory.
 ## License
 
 MIT
-
-```
-
-```
