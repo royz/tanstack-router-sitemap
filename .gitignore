@@ -4,3 +4,6 @@ dist
 
 # macOS
 .DS_Store
+
+# Ignore NPM package preview files
+*.tgz
