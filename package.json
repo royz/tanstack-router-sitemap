@@ -1,0 +1,18 @@
+{
+  "name": "tanstack-router-sitemap",
+  "version": "1.0.0",
+  "description": "Generate sitemap for TanStack Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Soderberg",
+  "license": "MIT",
+  "dependencies": {
+    "sitemap": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "typescript": "^5.7.3"
+  }
+}
