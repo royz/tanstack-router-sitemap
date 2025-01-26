@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "moduleResolution": "nodenext", // Enable proper resolution of ESM modules
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "NodeNext",
     "declaration": true,
     "outDir": "./",
     "strict": true,

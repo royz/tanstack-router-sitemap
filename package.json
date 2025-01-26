@@ -1,8 +1,8 @@
 {
   "name": "tanstack-router-sitemap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate sitemap for TanStack Router",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

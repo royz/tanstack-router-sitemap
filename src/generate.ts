@@ -1,10 +1,7 @@
 import { createWriteStream } from "fs";
 
 import path from "path";
-import {
-  SitemapStream,
-  streamToPromise,
-} from "../node_modules/sitemap/dist/index";
+import { SitemapStream, streamToPromise } from "sitemap";
 import { CommonSitemapFields, Sitemap } from "./sitemap-types";
 
 // A small interface for final flattened entries.
@@ -18,7 +15,7 @@ interface FinalSitemapEntry {
 export function generateSitemapPlugin<T extends string>(sitemap: Sitemap<T>) {
   return {
     name: "tanstack-router-sitemap",
-    apply: "build",
+    apply: "build" as const,
     closeBundle: async () => {
       await generateSitemap(sitemap);
     },
