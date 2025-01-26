@@ -1,6 +1,6 @@
 {
   "name": "tanstack-router-sitemap",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Generate sitemap for TanStack Router",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -17,6 +17,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryanjso/tanstack-router-sitemap.git"
+  },
   "author": "Ryan Soderberg",
   "license": "MIT",
   "dependencies": {
