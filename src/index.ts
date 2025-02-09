@@ -1,4 +1,8 @@
 import { generateSitemapPlugin as generateSitemap } from "./generate";
-import { Sitemap, CommonSitemapFields } from "./sitemap-types";
+import {
+  type Sitemap,
+  type CommonSitemapFields,
+  type DynamicRouteEntry,
+} from "./sitemap-types";
 
-export { generateSitemap, Sitemap, CommonSitemapFields };
+export { generateSitemap, Sitemap, CommonSitemapFields, DynamicRouteEntry };
