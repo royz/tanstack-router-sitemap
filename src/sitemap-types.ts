@@ -42,7 +42,7 @@ export type StaticRouteValue<R extends string> =
  * (each with a `path` field) or a function returning that array. The
  * function receives the route string (e.g. "/posts/$postId").
  */
-type DynamicRouteEntry = CommonSitemapFields & { path: string };
+export type DynamicRouteEntry = CommonSitemapFields & { path: string };
 export type DynamicRouteValue<R extends string> =
   | DynamicRouteEntry[]
   | ((route: R) => DynamicRouteEntry[] | Promise<DynamicRouteEntry[]>);
