@@ -1,6 +1,6 @@
 {
   "name": "tanstack-router-sitemap",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Generate sitemap for TanStack Router",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
