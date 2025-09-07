@@ -5,7 +5,12 @@ type SplitPath<S extends string> = S extends `${infer Segment}/${infer Rest}`
 
 /** If any segment starts with `$`, treat it as a param name. */
 type ExtractParams<S extends string> = {
-  [K in SplitPath<S> as K extends `$${infer Param}` ? Param : never]: string;
+	[K in SplitPath<S> as K extends `$${infer Param}`
+		? Param
+		: /** If any segment is as an optional param {-$data} */
+			K extends `{-$${infer Param}}`
+			? Param
+			: never]: string;
 };
 
 /** Check if a route string has any `$` segments. */
